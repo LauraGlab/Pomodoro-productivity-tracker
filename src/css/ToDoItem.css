@@ -1,0 +1,108 @@
+.task__section{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 100%;
+    width: 100%;
+}
+.checkTask{
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    display: grid;
+    font: inherit;
+    font-size: 14px;
+    height: 1.15em;
+    margin: 0.3em;
+    place-content: center;
+    transform: translateY(-0.075em);
+    -webkit-appearance: none;
+    width: 1.15em;
+}
+.checkTask::before {
+    box-shadow: inset 1em 1em var(--text-color);
+    content: "";
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    width: 0.65em;
+}
+.checkTask:checked{
+    border: 2px solid rgb(208, 69, 69);
+}
+.checkTask:checked::before {
+    border-radius: 50%;
+    box-shadow: inset 1em 1em rgb(208, 69, 69);
+    transform: scale(1);
+}
+.checkTask:checked ~ .textOfTask > .titleTask{
+    text-decoration: line-through;
+}
+.textOfTask{
+    border: none;
+    color: var(--text-color);
+    cursor:default;
+    display: flex;
+    font: inherit;
+    font-size: 14px;
+    height: 100%;
+    justify-content:space-between;
+    width: 80%;
+}
+.titleTask{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    overflow-x: auto;
+}
+.edit__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.editInput{
+    background: none;
+    border: none;
+    font-size: inherit;
+    outline: none;
+    width: 100%;
+}
+.editBtn, .saveBtn{
+    background: none;
+    border: none;
+    outline: none;
+}
+.saveBtn{
+    color: var(--text-color);
+}
+.saveBtn:hover{
+    color: hsl(359, 88%, 64%);
+    transition: color 2s;
+}
+.errorText{
+    color: hsl(359, 88%, 64%);
+    left: 10%;
+    position: absolute;
+}
+
+@media(max-width: 550px){
+    .checkTask {
+        height: 15px;
+        width: 15px;
+    }
+}
+@media(max-width: 400px){
+    .textOfTask{
+        width: 60%;
+    }
+}
+@media(max-width: 350px){
+    .textTask{
+        top: -2.5em;
+    }
+}
