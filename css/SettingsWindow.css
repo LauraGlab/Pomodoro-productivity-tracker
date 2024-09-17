@@ -1,0 +1,220 @@
+.settingsWindow {
+  background-color: var(--first-background-color);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+  color: var(--second-text-color);
+  display: block;
+  margin: auto;
+  max-height: 100%;
+  max-width: 400px;
+  overflow-y: scroll;
+  padding: 1em 1.4em;
+  position: relative;
+  transform: translateY(20px); 
+  transition: all 0.2s ease-in 0s;
+  width: 100%;
+  z-index: 999999;
+}
+.backgroundClickable{
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+	background-color: transparent;
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  height: 100svh;
+  margin: 0 auto;
+  pointer-events: auto;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 99;
+}
+.backgroundBlur{
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.233);
+  box-sizing: border-box;
+  display: flex;
+  height: 100svh;
+  justify-content: center;
+  padding: 48px 0px 58px;
+  pointer-events: auto;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  transition: all 0.2s ease-in 0s;
+  width: 100%;
+  z-index: 999;
+}
+
+
+
+section{
+  padding-bottom: 0.2em;
+}
+.titleSection{
+  color: var(--first-text-color);
+  font-size: 20px;
+  padding: 0.5em 0;
+}
+
+/*header section*/
+.settingsHeader__section{
+  margin-bottom: 1em;
+  position: relative;
+}
+.settingsHeader__title{
+  color: var(--first-text-color);
+  font-size: 15px;
+  margin:0;
+  text-align: center;
+}
+.iconClose{
+  position: absolute;
+  right: 0.2em;
+  top: 0.2em;
+}
+
+/*info section*/
+.settingsInfo__section{
+  border: 1px solid var(--second-text-color);
+  border-radius: 0.75em;
+  font-size: 14px;
+  margin: 1.2em 0.5em;
+  padding: 0.5em;
+}
+.settingsInfo__title{
+  margin-bottom: 0.2em;
+}
+
+/*timer section*/
+.settingTimer__section{
+  padding: 0.75em 0;
+}
+.settingTimer__section h3{
+  font-size: 14px;
+  padding: 0.5em 0;
+}
+.times__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.time {
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+.time p {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  opacity: 0.4;
+}
+.timer-settings {
+  align-items: center;
+  background-color: var(--off-white);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-shrink: 0;
+  height: 2.5rem;
+  justify-content:space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 6.75rem;
+}
+.input-controls{
+  width: 100%;
+}
+.timer-settings input {
+  background-color: transparent;
+  border: none;
+  color: var(--second-text-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  outline: none;
+  width: 4rem;
+}
+.applyButton__container{
+  position: relative;
+}
+.applyButton{
+  border: none;
+  bottom:0;
+  outline: none;
+  position: absolute;
+  right: 0;
+}
+
+/*theme section*/
+.settingTheme__section{
+  padding: 0.5em 0 1.6em;
+}
+.settingTheme__section h3{
+  font-size: 14px;
+  padding: 0.5em 0;
+}
+.mode__section{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin: 0.3em 0;
+}
+.color__section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cube {
+  align-items: center;
+  appearance: none;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  display: flex;
+  height: 2.75em;
+  justify-content: center;
+  margin: 0;
+  -webkit-appearance: none;
+  width: 2.75em;
+}
+.cube:checked{
+  border: 0.2em solid rgb(208, 69, 69);
+}
+.cube.red{
+  background-image: var(--red);
+}
+.cube.yellow{
+  background-image: var(--yellow);
+}
+.cube.blue{
+  background-image: var(--blue);
+}
+.cube.purple{
+  background-image: var(--purple);
+}
+.cube.pink{
+background-image: var(--pink);
+}
+.cube.green{
+background-image: var(--green);
+}
+.cube.black{
+  background-image: var(--black);
+}
+
+/*close section*/
+.applyButton__container{
+  margin-top: 3.3em;
+}
+.applyButton{
+  background-color: rgb(58, 58, 58);
+  border-radius: 0.5em;
+  color: white;
+  padding: 0.8em 2em;
+}
