@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from "react"
+import ReactDOM from "react-dom/client"
 import { ThemeProvider } from "./contexts/ThemeContext.jsx";
 import { TimeProvider } from "./contexts/TimeContext.jsx";
 import App from "./App.jsx";
