@@ -192,7 +192,8 @@ export default function ToDoItem({todo}) {
                 <button
                   className="windowSecondBtn"
                   onClick={() => {
-                    setMenuState({ edit: true });
+                    startEditing(todo.id, todo.title, todo.category, todo.priority);
+                    openMenu("edit");
                   }}
                 >
                   <SVG
