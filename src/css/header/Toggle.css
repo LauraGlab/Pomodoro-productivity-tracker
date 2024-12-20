@@ -1,0 +1,118 @@
+.react-toggle {
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 32px;
+    padding: 0;
+    position: relative;
+    touch-action: pan-x;
+    user-select: none;
+}
+
+.react-toggle-screenreader-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.react-toggle--disabled {
+    cursor: not-allowed;
+    opacity: .5;
+    transition: opacity .25s
+}
+
+.react-toggle-track {
+    background-color: var(--white);
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 30px;
+    height: 32px;
+    margin: auto;
+    padding: 0;
+    transition: all .2s ease;
+    width: 54px;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: var(--white);
+}
+
+.react-toggle--checked .react-toggle-track {
+    background-color: #000;
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: #000;
+}
+
+.react-toggle-track-check {
+    bottom: 0;
+    height: 28px;
+    left: 5px;
+    line-height: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    opacity: 0;
+    position: absolute;
+    top: 23px;
+    transition: opacity .25s ease;
+    width: 28px;
+}
+
+.react-toggle--checked .react-toggle-track-check,.react-toggle-track-x {
+    opacity: 1;
+    transition: opacity .25s ease
+}
+
+.react-toggle-track-x {
+    bottom: 0;
+    height: 10px;
+    line-height: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    position: absolute;
+    right: 13px;
+    top: 8px;
+    width: 10px;
+}
+
+.react-toggle--checked .react-toggle-track-x {
+    opacity: 0
+}
+
+.react-toggle-thumb {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 29px;
+    left: 1.5px;
+    position: absolute;
+    top: 1.5px;
+    transition: all .25s ease;
+    width: 29px;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+    border: none;
+    left: 23px;
+}
+
+.react-toggle--focus .react-toggle-thumb {
+    box-shadow: 0 0 2px 3px #729fb47e
+}
+
+.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
+    box-shadow: 0 0 5px 5px #729fb47e
+}

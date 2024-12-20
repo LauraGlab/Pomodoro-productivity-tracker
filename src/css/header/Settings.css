@@ -1,0 +1,35 @@
+.desktopSettingsBtn{
+    display: none;
+}
+
+.mobileSettingsBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+@media(min-width: 768px){
+    .desktopSettingsBtn{
+        align-items: center;
+        background-image: var(--color);
+        border: 1px solid var(--white);
+        border-radius: 3rem;
+        color: var(--white);
+        column-gap: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        height: 35px;
+        justify-content: center;
+        transition: 0.5s;
+        width: 100px;
+    }
+
+    .desktopSettingsBtn:hover{
+        border-color: rgba(128, 128, 128, 0);
+    }
+
+    .mobileSettingsBtn{
+        display: none;
+    }
+}

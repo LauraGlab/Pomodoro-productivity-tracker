@@ -1,0 +1,95 @@
+.toDoListSection{
+    border-radius: 1rem;
+    color: var(--textColor-first);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 610px;
+    width: 100%;
+}
+
+.titleToDo__section{
+    display: flex;
+    flex-direction: row;
+    height: 58px;
+    justify-content: space-between;
+    padding: 1rem 1rem 0.3rem;
+    width: 100%;
+}
+
+.titleToDo{
+    font-size: 17px;
+}
+
+.titleNumber{
+    font-weight: 400;
+}
+
+.menuDelete{
+    background-color: inherit;
+    border: none;
+    margin-left: 1rem;
+}
+
+.searchInput{
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: var(--textColor-first);
+    height: 90%;
+    outline: none;
+    transition: 0.1s ease-out;
+    width: 100%;
+}
+
+.tasksSection{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    margin-left: 0.5rem;
+    max-height: 500px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 58px;
+    width: 98%;
+}
+
+/*no tasks menu*/
+.noTasksDisplay{
+    align-items: center;
+    color: var(--textColor-first);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    top: 58px;
+}
+
+.noTasksImg{
+    height: 85px;
+    width: 85px;
+}
+
+.noTasksImg path{
+    stroke: var(--svg-color);
+}
+
+.noTasksText{
+    font-weight: 600;
+    padding: 0.2rem 0 0.5rem;
+}
+
+.noTasksDisplayNone{
+    display: none;
+}
+
+@media(max-width: 230px){
+  .toDoListSection{
+    display: none;
+  }
+}

@@ -1,0 +1,212 @@
+section{
+  padding-bottom: 0.2rem;
+}
+
+.titleSection{
+  color: var(--textColor-first);
+  font-size: 20px;
+  padding: 0.5rem 0;
+}
+
+/*header section*/
+.settingsHeaderSection{
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.settingsHeaderTitle{
+  color: var(--textColor-first);
+  font-size: 15px;
+  margin:0;
+  text-align: center;
+}
+
+.iconClose{ 
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+}
+
+.iconClose path{ 
+  fill: var(--svg-color);
+}
+
+/*timer section*/
+.settingTimerSection{
+  padding: 0.75rem 0;
+}
+
+.settingTimerSubtitle{
+  font-size: 14px;
+  padding: 0.5rem 0;
+}
+
+.settingTimerItem {
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.settingTimerLabel {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  opacity: 0.4;
+}
+
+.settingTimerControls {
+  align-items: center;
+  background-color: var(--off-white);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-shrink: 0;
+  height: 2.5rem;
+  justify-content:space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+.settingTimerBtns{
+  display:flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.settingTimerInput{
+  background-color: transparent;
+  border: none;
+  color: var(--textColor-second);
+  font-size: 0.875rem;
+  font-weight: 700;
+  outline: none;
+}
+
+.applyButton__container{
+  position: relative;
+}
+
+.applyButton{
+  border: none;
+  bottom:0;
+  outline: none;
+  position: absolute;
+  right: 0;
+}
+
+/*theme section*/
+.settingThemeSection{
+  padding: 0.5rem 0 1.6rem;
+}
+
+.modeSubtitle{
+  font-size: 14px;
+  padding: 0.5rem 0;
+}
+
+.modeSection{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin: 0.3rem 0;
+}
+
+.bckgrSubtitle{
+  padding: 0.2rem 0 0.5rem;
+}
+
+.colorSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cube {
+  align-items: center;
+  appearance: none;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  margin: 0;
+  -webkit-appearance: none;
+  width: 2rem;
+}
+
+.cube:checked{
+  border: 0.2rem solid rgb(208, 69, 69);
+}
+
+.cube.red{
+  background-image: var(--red);
+}
+
+.cube.yellow{
+  background-image: var(--yellow);
+}
+
+.cube.blue{
+  background-image: var(--blue);
+}
+
+.cube.purple{
+  background-image: var(--purple);
+}
+
+.cube.pink{
+background-image: var(--pink);
+}
+
+.cube.green{
+background-image: var(--green);
+}
+
+.cube.black{
+  background-image: var(--black);
+}
+
+/*close section*/
+.applyButton__section{
+  margin-top: 3.3rem;
+  position: relative;
+}
+
+.applyButton{
+  background-color: rgb(58, 58, 58);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.8rem 2rem;
+  position: absolute;
+}
+
+@media(min-width: 425px){
+  .colorSubtitle{
+    padding: 0.3rem 0;
+  }
+
+  .cube {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+@media(min-width: 475px){
+  .settingTimerList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .settingTimerControls {
+    width: 6.75rem;
+  }
+
+  .settingTimerInput{
+    width: 4rem;
+  }
+}

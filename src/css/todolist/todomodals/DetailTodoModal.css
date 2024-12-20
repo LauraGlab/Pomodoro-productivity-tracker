@@ -1,0 +1,50 @@
+.detailClose__section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.detailClose{
+    height: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.detailImg{
+    height: 50px;
+    width: 50px;
+}
+
+table{
+    height: 100%;
+}
+
+thead{
+    height: 100%;
+}
+
+tr{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 70px;
+}
+
+th {
+    align-items: center;
+    border: 1px solid #535353;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0.25rem 0;
+    width: 100%;
+}
+th p{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

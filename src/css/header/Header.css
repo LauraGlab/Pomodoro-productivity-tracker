@@ -1,0 +1,44 @@
+.headerSection{
+  align-items: center;
+  border-bottom: 0.01rem solid rgba(56, 56, 56, 0.255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0.8rem;
+  width: 100%;
+}
+
+h1{
+  color: var(--white);
+  font-family:"Albert", sans-serif !important;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.headerBtnSection{
+  align-items: center;
+  background-image: var(--color);
+  border: 1px solid var(--white);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.2rem;
+}
+
+@media(min-width: 768px){
+  h1{
+    font-size: 24px;
+  }
+
+  .headerBtnSection{
+    background-image: none;
+    border: none;
+    column-gap: 0.3rem;
+  }
+
+  .iconHeader{
+    height: 24px;
+    width: 24px;
+  }
+}

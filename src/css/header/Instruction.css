@@ -1,0 +1,53 @@
+.desktopInstructionBtn{
+    display: none;
+}
+.mobileInstructionBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.instructionTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.instructionText{
+    font-weight: 700;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .desktopInstructionBtn{
+        align-items: center;
+        background-image: var(--color);
+        border: 1px solid var(--white);
+        border-radius: 3rem;
+        color: var(--white);
+        column-gap: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        height: 35px;
+        justify-content: center;
+        transition: 0.5s;
+        width: 105px;
+    }
+
+    .desktopInstructionBtn:hover{
+        border-color: rgba(128, 128, 128, 0);
+    }
+
+    .mobileInstructionBtn{
+        display: none;
+    }
+
+    .iconInfo{
+        height: 24px;
+        width: 24px;
+    }
+}
