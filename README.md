@@ -25,7 +25,7 @@ Pomodoro Productivity Tracker is a comprehensive time management and task organi
 ### Task Management:
 - **Completion/Progress Bar:** Track your task completion at a glance.
 - **Edit/Delete Tasks:** Modify or remove individual tasks or bulk delete completed or all tasks.
-- **Drag-and-Drop Functionality:** Easily reorder tasks with intuitive drag-and-drop support.
+- **Swipe to manage tasks:** Quickly access task options with a simple swipe.
 - **Task Details Menu:** View additional details about each task.
 - **Categorization:** Organize tasks by category for better management.
 
