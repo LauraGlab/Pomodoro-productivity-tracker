@@ -59,6 +59,10 @@
     justify-content: space-between;
   }
 
+  .menuSection{
+    margin: 0;
+  }
+
   .playPauseBtn{
     height: 60px;
     padding: 0;
