@@ -71,5 +71,3 @@ Pomodoro Productivity Tracker is a comprehensive time management and task organi
 
 ## License
 This project is licensed under the MIT License.
-
-More info will be added soon.
