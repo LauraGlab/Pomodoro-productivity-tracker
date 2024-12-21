@@ -53,7 +53,6 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-
   padding: 1rem;
   width: 100%;
 }
@@ -495,6 +494,7 @@ body {
   }
 
   .secondSection{
+    margin: 0;
     order: 1;
   }
 
