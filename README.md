@@ -52,11 +52,11 @@ Pomodoro Productivity Tracker is a comprehensive time management and task organi
 ## Project Screenshots
 
 <div>
-  <img src="src/assets/readme/readme1.png" alt="Screenshot of the Pomodoro Tracker 2" width="600">
-  <img src="src/assets/readme/readme3.png" alt="Screenshot of the Pomodoro Tracker 3" width="600">
-  <img src="src/assets/readme/readme4.png" alt="Screenshot of the Pomodoro Tracker 4" width="600">
-  <img src="src/assets/readme/readme5.png" alt="Screenshot of the Pomodoro Tracker 5" width="600">
-  <img src="src/assets/readme/readme6.png" alt="Screenshot of the Pomodoro Tracker 6" width="600">
+  <img src="src/assets/readme/readme1.png" alt="Screenshot of the Pomodoro Tracker 2" width="800">
+  <img src="src/assets/readme/readme3.png" alt="Screenshot of the Pomodoro Tracker 3" width="800">
+  <img src="src/assets/readme/readme4.png" alt="Screenshot of the Pomodoro Tracker 4" width="800">
+  <img src="src/assets/readme/readme5.png" alt="Screenshot of the Pomodoro Tracker 5" width="800">
+  <img src="src/assets/readme/readme6.png" alt="Screenshot of the Pomodoro Tracker 6" width="800">
 </div>
 
 
