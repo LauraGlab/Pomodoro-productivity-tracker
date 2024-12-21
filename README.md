@@ -1,13 +1,9 @@
 <h1 align="center">Pomodoro Productivity Tracker</h1>
 
 <div align="center">
-  <img src="src/assets/readme/readme1.jpg" alt="Screenshot of the Pomodoro Tracker" width="600">
-  <p>Streamline your productivity and manage tasks efficiently with our advanced web-based tracker.</p>
-  <a href="https://your-website.com](https://pomodoro-productivity-tracker.vercel.app/" target="_blank">Click here</a>
+  <img src="src/assets/readme/readme2.png" alt="Screenshot of the Pomodoro Tracker" width="600">
+  <p>Streamline your productivity and manage tasks efficiently with my advanced web-based <a href="https://your-website.com](https://pomodoro-productivity-tracker.vercel.app/" target="_blank" text-decoration="none">Pomodoro</a> tracker.</p>
 </div>
-
-**Link here**  
-Soon more photos
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -17,6 +13,7 @@ Soon more photos
   - [Theming and Personalization](#theming-and-personalization)
   - [Additional Features](#additional-features)
 - [Usage](#usage)
+- [Project Screenshots](#project-screenshots)
 - [Built with](#built-with)
 - [License](#license)
 
@@ -51,6 +48,17 @@ Pomodoro Productivity Tracker is a comprehensive time management and task organi
 2. Start the Pomodoro timer to begin focusing on tasks.
 3. Use the theme customization and dark mode settings to tailor your workspace.
 4. Track your progress through the completion bar and task details.
+
+## Project Screenshots
+
+<div>
+  <img src="src/assets/readme/readme1.png" alt="Screenshot of the Pomodoro Tracker 2" width="600">
+  <img src="src/assets/readme/readme3.png" alt="Screenshot of the Pomodoro Tracker 3" width="600">
+  <img src="src/assets/readme/readme4.png" alt="Screenshot of the Pomodoro Tracker 4" width="600">
+  <img src="src/assets/readme/readme5.png" alt="Screenshot of the Pomodoro Tracker 5" width="600">
+  <img src="src/assets/readme/readme6.png" alt="Screenshot of the Pomodoro Tracker 6" width="600">
+</div>
+
 
 ## Built with:
 - **React.js** - A JavaScript library for building user interfaces.
