@@ -137,8 +137,14 @@ export default function ToDoItem({ todo }) {
                         done: e.target.checked,
                       });
                     }}
-                    onTouchStart={(e) => e.stopPropagation()} 
-                    onTouchEnd={(e) => e.stopPropagation()}
+                    onTouchStart={(e) => {
+                      e.preventDefault(); // Prevent accidental interference
+                      updateTodoItem({
+                        ...todo,
+                        done: !todo.done, // Toggle the checked state
+                      });
+                    }}
+                    onTouchEnd={(e) => e.stopPropagation()} 
                   />
                   <div className="categoryTask">
                     <SVG src={todo.category} width={30} height={30} />
