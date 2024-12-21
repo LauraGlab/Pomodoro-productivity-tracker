@@ -1,8 +1,8 @@
-import React, { useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import Draggable from "react-draggable";
 import { AnimatePresence, motion } from "framer-motion";
 import SVG from "react-inlinesvg";
-import { useTodosChange } from "../../contexts/TodoContext.jsx"; 
+import { useTodosChange } from "../../contexts/TodoContext.jsx";
 import DeleteTodoModal from "./todomodals/DeleteTodoModal.jsx";
 import DetailTodoModal from "./todomodals/DetailTodoModal.jsx";
 import EditTodoModal from "./todomodals/EditTodoModal.jsx";
@@ -13,18 +13,28 @@ import eyeIcon from "./../../assets/images/icon-eye.svg";
 import "react-swipeable-list/dist/styles.css";
 import "./../../css/todolist/ToDoItem.css";
 
-
-export default function ToDoItem({todo}) {
-  const [menuState, setMenuState] = useState({main: false, edit: false, delete: false, detail: false});
+export default function ToDoItem({ todo }) {
+  const [menuState, setMenuState] = useState({
+    main: false,
+    edit: false,
+    delete: false,
+    detail: false,
+  });
   const { todos, setTodos } = useTodosChange();
   const [editingTodoId, setEditingTodoId] = useState("");
-  const [newValue, setNewValue] = useState({title: "", category: "", priority: ""});
+  const [newValue, setNewValue] = useState({
+    title: "",
+    category: "",
+    priority: "",
+  });
   const [isDrag, setIsDrag] = useState(false);
   const [isActionOpen, setIsActionOpen] = useState(false);
   const [percent, setPercent] = useState(0);
   const [left, setLeft] = useState(0);
   const itemRef = useRef();
   const actionRef = useRef();
+
+  const dragTimeout = useRef(null); // Timer for detecting drag vs. tap
 
   const startEditing = (todoId, title, category, priority) => {
     setEditingTodoId(todoId);
@@ -44,10 +54,15 @@ export default function ToDoItem({todo}) {
   };
 
   const handleStart = () => {
-    setIsDrag(true);
+    setIsDrag(false);
+    dragTimeout.current = setTimeout(() => {
+      setIsDrag(true);
+    }, 150); // If held for more than 150ms, consider it a drag
   };
 
   const handleStop = () => {
+    clearTimeout(dragTimeout.current);
+
     if (percent > 10) {
       setIsActionOpen(true);
       const w = actionRef.current.offsetWidth;
@@ -60,12 +75,22 @@ export default function ToDoItem({todo}) {
   };
 
   const handleDrag = (e, data) => {
+    clearTimeout(dragTimeout.current); // Cancel drag detection once movement starts
     const w = itemRef.current.offsetWidth;
     const x = data.x < 0 ? data.x * -1 : data.x;
     const p = (x / w) * 100;
 
     setPercent(p);
     setLeft(data.x);
+    setIsDrag(true);
+  };
+
+  const handleTap = (e) => {
+    if (!isDrag) {
+      // If not dragging, treat it as a tap
+      e.preventDefault();
+      toggleMainMenu();
+    }
   };
 
   const openMenu = (menu) => {
@@ -125,6 +150,7 @@ export default function ToDoItem({todo}) {
                 ref={itemRef}
                 className="item"
                 style={{ transform: `translate3d(${left}px, 0, 0px)` }}
+                onClick={handleTap}
               >
                 <div className={`itemFirstSection priority-${todo.priority}`}>
                   <input
@@ -192,8 +218,7 @@ export default function ToDoItem({todo}) {
                 <button
                   className="windowSecondBtn"
                   onClick={() => {
-                    startEditing(todo.id, todo.title, todo.category, todo.priority);
-                    openMenu("edit");
+                    setMenuState({ edit: true });
                   }}
                 >
                   <SVG
