@@ -1,7 +1,7 @@
 <h1 align="center">Pomodoro Productivity Tracker</h1>
 
 <div align="center">
-  <img src="src/assets/readme/image-name.jpg" alt="Screenshot of the Pomodoro Tracker" width="600">
+  <img src="src/assets/readme/readme1.jpg" alt="Screenshot of the Pomodoro Tracker" width="600">
   <p>Streamline your productivity and manage tasks efficiently with our advanced web-based tracker.</p>
   <a href="https://your-website.com](https://pomodoro-productivity-tracker.vercel.app/" target="_blank">Click here</a>
 </div>
