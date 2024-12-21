@@ -137,7 +137,8 @@ export default function ToDoItem({ todo }) {
                         done: e.target.checked,
                       });
                     }}
-                    onTouchStart={(e) => e.stopPropagation()}
+                    onTouchStart={(e) => e.stopPropagation()} 
+                    onTouchEnd={(e) => e.stopPropagation()}
                   />
                   <div className="categoryTask">
                     <SVG src={todo.category} width={30} height={30} />
@@ -150,8 +151,10 @@ export default function ToDoItem({ todo }) {
                   <button
                     className="menuBtn"
                     onClick={toggleMainMenu}
-                    onTouchStart={toggleMainMenu}
-                    onTouchEnd={toggleMainMenu}
+                    onTouchStart={(e) => {
+                      e.preventDefault(); 
+                      toggleMainMenu(); 
+                    }}
                   >
                     <SVG
                       className="svgTwoIcon"
