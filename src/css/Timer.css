@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-@media(min-width: 768px){
+@media(min-width: 1024px){
   .timer__section{
     background-color: var(--bckgr-second);
     border-radius: 2rem;
