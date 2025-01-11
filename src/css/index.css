@@ -554,7 +554,6 @@ body {
   }
 }
 
-
 /*dark mode*/
 .dark {
   --bckgr-first: #1f2023;
@@ -562,20 +561,11 @@ body {
   --bckgr-third: #3a3b3e;
   --bckgr-timer: rgba(153, 153, 153, 0.5);
   --color: var(--black);
-
+  --color-foreground: #efefef;
+  --off-white: #979797;
+  --svg-color: #f3f3f3;
   --textColor-first: #fff;
   --textColor-second: #ffffff;
   --textColor-third: #1f2023;
   background-image: var(--black);
-  /**/
-  --category-bckgr: #3a3b3e;
-  --color-foreground: #efefef;
-  --first-background-color: #1f2023;
-  --first-text-color: #fff;
-  --second-background-color: #33343799;
-  --second-text-color: #ffffff;
-  --off-white: #979797;
-  --svg-color: #f3f3f3;
-  --third-text-color: #1f2023;
-  --timer-background-color:  rgba(153, 153, 153, 0.5);
 }
