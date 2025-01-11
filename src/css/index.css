@@ -475,6 +475,33 @@ body {
   }
 }
 
+@media(min-width: 1000px){
+  .windowTodo{
+    height: 400px;
+    padding: 2rem;
+    width: 600px;
+  }
+
+  .todoInput{
+    font-size: 19px;
+  }
+  .radioCategory{
+    height: 70px;
+    width: 70px;
+  }
+
+  .categoryImg{
+    height: 26px;
+    width: 26px;
+  }
+
+  .windowBtn{
+    font-size: 14px;
+    height:60px;
+    width: 110px;
+  }
+}
+
 @media(min-width: 1024px){
   .app{
     height: 100vh;
@@ -525,33 +552,6 @@ body {
 
   .deleteText{
     font-size: 18px;
-  }
-}
-
-@media(min-width: 1000px){
-  .windowTodo{
-    height: 400px;
-    padding: 2rem;
-    width: 600px;
-  }
-
-  .todoInput{
-    font-size: 19px;
-  }
-  .radioCategory{
-    height: 70px;
-    width: 70px;
-  }
-
-  .categoryImg{
-    height: 26px;
-    width: 26px;
-  }
-
-  .windowBtn{
-    font-size: 14px;
-    height:60px;
-    width: 110px;
   }
 }
 
