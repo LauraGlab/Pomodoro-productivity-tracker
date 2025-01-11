@@ -481,6 +481,7 @@ body {
   }
 
   .main{
+    align-items: start;
     column-gap: 3%;
     display: grid;
     grid-template-columns: 42% 42%;
